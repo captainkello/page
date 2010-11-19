@@ -1,5 +1,7 @@
 Pages::Application.routes.draw do
 
+  resources :members
+
   match '/home' => 'pages#home'
   match '/about' => 'pages#about'
   match '/contact' => 'pages#contact'
